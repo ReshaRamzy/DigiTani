@@ -1,13 +1,1 @@
-{
-    "type": "service_account",
-    "project_id": "digitani-388214",
-    "private_key_id": "0fdf740415b9d1dd610206594d5996a3ed625459",
-    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCyvbadcW2BMcGf\n0UEaBi8YKuIomRI7o15UDdm65kK12Dxa2ucO3eCJ9bOQE1AW5L7P/U/ha5GISYXG\n2CBlZZBn+gcmCIP3hBp6Z6NrckJx5dtNxy8WAGP4P+RroK+EmFUnh+ukpTu5Begw\nrX6RXPdG9mO2ygscElma5iR9nEPUNbUGMssStETMBCpMsL+faumU/fiQmglMZm73\nuyModevY8e3cBEQsn3SHcnVd0wAF/kVORAtfDlN4c4PUiJY5E6stvM+pqPee3Wxe\n3kbLpNTZjmmUAj2wYSW+TQB8aktB1SmV6sBxAXd6stN2cDZoYry7Mx0DYKO59lJf\nP7RG6yTdAgMBAAECggEAKYVYfopy3agpSm7ZqKn3Fq4fiz7DtYblyrDM+1Wx+XwZ\nySFAu3tfRa0F4VobKLZKfRZjEAJk9DvgD6j1HZjSStUSBAvGXCEb5YNduv/33219\n3DuA/KNqlaiB716MZ0jbvysb2ktn7DsrDOPAmxP1fU6PK08T9Zltp0X/BA7g0tKi\nnYnMtXXnFZl0B7583zZmWC0XYsBMAJ+W91l76M6bYTQG6KbCCLoI7T8C0aLozGfz\nwVF5LmvXRRj5dHdrTGOactYjAIJ4ttOgz/4w/75B0R4Z+mFe7SjNgmIkEpMRZSMz\nhdxt2IPLS9pOLueHE1nh98O9wTjDqUN+jpkjqCGFIQKBgQD3xGXPtE+1j16tFkru\n+tUPi0JIe9bMppg2iAO7bRq6YQ/yO3KxHDDIPypF7CsiCX5Ph+72OPqV9Qt8rLIo\nNJKcwBdDn5FTTiC5Fqy7Bj2xwcfI0PHW6eeRGVwXfRCtrsLOsNYgrujDn5c9QHWS\n5zEeTcWieQEK90BFX4eGsPypqwKBgQC4ric1w8fDGry8A+ihMcfvlfv/dALjTtek\n4YQ7Km5cHaB3tvBeeUr/Bud2DvP3jrccw/Uf6ZdYEOwFULfli7g7Hd0kWAZEgxxa\nb1tdzGkg83SmidW6EhULx4UMKd/N3YVcwqSjLDVtPIs1Msn5jUjvyXsbe5nDgVix\nnyLRakIzlwKBgQCMHY8OBQRGwsthyweZWlR/M9vKLe5tUZEm1Yh2x96jpBxmemQD\n8NNNixsW69YAq6m4xEDJEbP0dd2HJgqiXgjDiIYfge+nUrmCsmYAZikhi1q2ICOD\nzEdecR75UYrLDdexF6QgW4nahzf6NafH6eKHJqgrl46Vavn3wWxdKV3ZfQKBgQCN\nYHSPyhKQn1VAMVXSoINIO+8vvaXAUUjv5dwOVwso5V1Eh/02tW/eD3D9hbDqIIy5\nLqHmDjJXroyf/QzqYq1kRBZYjjIuHJiF+p1dDvCj0vvHydidmt4VqGWHzD6SIDTJ\nsA/NAjjcKO8AiKLpsWjWd80QWux5J/m37/T9j3SifQKBgFd1Jl2ptPV+VTh++FKW\n/hFU0eIuZojGqCh2IU4taeHDR7eWaM8ZF0Wsvr/KzcS4xi4ZdEWpqCK+SQgzsB5V\nriMs1SfEWyqDK25mqAQpb2Zp6zsjn4rjtBe/9mKBEEbKC8hs2ScWVG8w4eUEThvS\n5V/d4i4k2A/KHGw31Gf1oDhB\n-----END PRIVATE KEY-----\n",
-    "client_email": "digitani@digitani-388214.iam.gserviceaccount.com",
-    "client_id": "115693693049584272139",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/digitani%40digitani-388214.iam.gserviceaccount.com",
-    "universe_domain": "googleapis.com"
-  }
+
