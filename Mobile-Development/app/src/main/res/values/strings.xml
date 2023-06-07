@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">DigiTani</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="onbooarding_image_1">Onbooarding Image 1</string>
 </resources>
