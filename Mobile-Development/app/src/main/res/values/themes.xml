@@ -13,6 +13,8 @@
         <!--  Status bar color.  -->
         <item name="android:statusBarColor">?attr/colorPrimary</item>
         <!--  Customize your theme here.  -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">

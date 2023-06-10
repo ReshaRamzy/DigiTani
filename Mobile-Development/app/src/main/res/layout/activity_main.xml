@@ -1,95 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFFFF0"
-    app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/ivIndicator1"
-        android:layout_width="161dp"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/indicator_stroke"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="36dp" />
-
-    <ImageView
-        android:id="@+id/ivIndicator2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/indicator_stroke"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="36dp" />
-
-    <ImageView
-        android:id="@+id/ivIndicator3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/indicator_stroke"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="36dp" />
-
-    <ImageView
-        android:id="@+id/ivIndicator4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/indicator_stroke"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="36dp" />
-
-    <ImageView
-        android:id="@+id/ivIndicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/indicator_stroke"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="36dp" />
-
-    <ImageView
-        android:id="@+id/ivSmartCrop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/onbooarding_image_1"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/on_boarding_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSkipButton"
-        app:layout_constraintVertical_bias="0.26"
-        app:srcCompat="@drawable/onboarding_page1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvSmartCrop"
-        android:layout_width="197dp"
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dotsIndicator"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/work_sans_bold"
-        android:gravity="center_horizontal"
-        android:text="Smart Crop Management"
-        android:textColor="@color/text_color"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:dotsColor="@color/bg_variant_2"
+        app:dotsSize="12dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSkipButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivSmartCrop"
-        app:layout_constraintVertical_bias="0.19999999" />
+        app:layout_constraintTop_toTopOf="@+id/tvSkipButton"
+        app:selectedDotColor="#333333" />
 
     <TextView
-        android:id="@+id/tvSmartCropDesc"
-        android:layout_width="230dp"
+        android:id="@+id/tvSkipButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/work_sans"
-        android:gravity="center_horizontal"
-        android:text="Effortlessly manage your crops with our intuitive calendar."
-        android:textColor="@color/text_color"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/tvSmartCrop"
-        app:layout_constraintStart_toStartOf="@+id/tvSmartCrop"
-        app:layout_constraintTop_toBottomOf="@+id/tvSmartCrop" />
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="Skip"
+        android:textColor="@color/green_variant_1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="Back"
+        android:textColor="@color/green_variant_1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSkipButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSkipButton" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/materialButton2"
@@ -106,22 +70,12 @@
         android:textSize="20sp"
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tvSmartCropDesc"
-        app:layout_constraintStart_toStartOf="@+id/tvSmartCropDesc"
-        app:layout_constraintTop_toBottomOf="@+id/tvSmartCrop" />
-
-    <TextView
-        android:id="@+id/tvSkipButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:fontFamily="@font/work_sans_semibold"
-        android:text="Skip"
-        android:textColor="@color/green_variant_1"
-        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dotsIndicator"
+        app:layout_constraintVertical_bias="0.9" />
 
 
-</androidx.constraintlayout.motion.widget.MotionLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

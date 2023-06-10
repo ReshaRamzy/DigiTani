@@ -2,4 +2,20 @@
     <string name="app_name">DigiTani</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="onbooarding_image_1">Onbooarding Image 1</string>
+
+    <string-array name="on_boarding_titles">
+        <item>Welcome to DigiTani</item>
+        <item>Smart Crop Management</item>
+        <item>Crop Diagnosis</item>
+        <item>Crop Recommendations</item>
+        <item>Farmer\'s Marketplace</item>
+    </string-array>
+
+    <string-array name="on_boarding_description">
+        <item>Empowering Farmers for a Sustainable Future!</item>
+        <item>Effortlessly manage your crops with our intuitive calendar. </item>
+        <item>Scan your crops and identify any illnesses or diseases.</item>
+        <item>Maximize your yield by planting the right crops at the right time.</item>
+        <item>Discover a marketplace where you can track your crop prices in real time.</item>
+    </string-array>
 </resources>
