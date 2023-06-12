@@ -1,7 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 tensorflow==2.12.0
 numpy==1.23.5
 scikit-learn==1.2.2
+=======
+tensorflow==2.12.0
+numpy==1.23.5
+scikit-learn==1.2.2
+>>>>>>> 39e2d129600a8cfb5fbd5102c9430f914b5d66c6
 =======
 tensorflow==2.12.0
 numpy==1.23.5
