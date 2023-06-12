@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EFFFF0"
-    tools:context=".OnBoardingFragment">
+    tools:context=".ui.onboarding.OnBoardingFragment">
 
 
     <ImageView

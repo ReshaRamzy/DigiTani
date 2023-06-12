@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.ui.onboarding
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentOnBoardingBinding
 
 class OnBoardingFragment : Fragment() {
@@ -38,11 +39,11 @@ class OnBoardingFragment : Fragment() {
     private fun getOnBoardingImageAssets() : List<Drawable> {
         val drawable: MutableList<Drawable> = ArrayList()
 
-        drawable.add(ContextCompat.getDrawable(requireContext(), R.drawable.welcomescreen)!!)
-        drawable.add(ContextCompat.getDrawable(requireContext(), R.drawable.onboarding_page1)!!)
-        drawable.add(ContextCompat.getDrawable(requireContext(), R.drawable.onboarding_page2)!!)
-        drawable.add(ContextCompat.getDrawable(requireContext(), R.drawable.onboarding_page3)!!)
-        drawable.add(ContextCompat.getDrawable(requireContext(), R.drawable.onboarding_page4)!!)
+        drawable.add(ContextCompat.getDrawable(requireContext() , R.drawable.welcomescreen)!!)
+        drawable.add(ContextCompat.getDrawable(requireContext() , R.drawable.onboarding_page1)!!)
+        drawable.add(ContextCompat.getDrawable(requireContext() , R.drawable.onboarding_page2)!!)
+        drawable.add(ContextCompat.getDrawable(requireContext() , R.drawable.onboarding_page3)!!)
+        drawable.add(ContextCompat.getDrawable(requireContext() , R.drawable.onboarding_page4)!!)
 
         return drawable
     }

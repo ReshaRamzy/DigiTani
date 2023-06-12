@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.ui.onboarding
 
 import android.content.Context
 import android.content.Intent
@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.WindowCompat
+import com.example.myapplication.MainScreenActivity
+import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -22,11 +24,13 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         if (!hasShownOnboarding()){
-            startActivity(Intent(this@MainActivity, MainActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
+            markOnboardingShown()
         }else{
-            startActivity(Intent(this@MainActivity, HomeActivity::class.java))
+            startActivity(Intent(this@MainActivity, MainScreenActivity::class.java))
+            finish()
         }
-        markOnboardingShown()
+
 
         val numberOfScreens = resources.getStringArray(R.array.on_boarding_titles).size
         val adapterOnboard = OnBoardingAdapter(this , numberOfScreens)
@@ -40,7 +44,8 @@ class MainActivity : AppCompatActivity() {
                 if (currentItem < (onBoardingViewPager.adapter?.itemCount?.minus(1) ?: 0)) {
                     onBoardingViewPager.setCurrentItem(currentItem + 1, true)
                 }else{
-                    startActivity(Intent(this@MainActivity, HomeActivity::class.java))
+                    startActivity(Intent(this@MainActivity, MainScreenActivity::class.java))
+                    finish()
                 }
             }
 
@@ -52,8 +57,9 @@ class MainActivity : AppCompatActivity() {
             }
 
             tvSkipButton.setOnClickListener{
-                val intent = Intent(this@MainActivity, HomeActivity::class.java)
+                val intent = Intent(this@MainActivity, MainScreenActivity::class.java)
                 startActivity(intent)
+                finish()
             }
         }
     }
@@ -70,7 +76,5 @@ class MainActivity : AppCompatActivity() {
         editor.apply()
     }
 
-    companion object {
-        private val TAG = MainActivity::class.java
-    }
+
 }

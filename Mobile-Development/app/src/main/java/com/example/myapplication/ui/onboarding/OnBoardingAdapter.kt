@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.ui.onboarding
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
