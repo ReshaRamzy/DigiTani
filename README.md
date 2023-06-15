@@ -16,7 +16,7 @@ We separate our documentation into three, which is Android Mobile Development, M
 
 [Cloud Computing](https://github.com/ReshaRamzy/DigiTani/tree/61a85afbb34c14ff550018d02ca82ed0e589d37e/Cloud-Computing)
 
-[Machne Learning](https://github.com/ReshaRamzy/DigiTani/tree/61a85afbb34c14ff550018d02ca82ed0e589d37e/Machine-Learning)
+[Machine Learning](https://github.com/ReshaRamzy/DigiTani/tree/61a85afbb34c14ff550018d02ca82ed0e589d37e/Machine-Learning)
 
 [Cloud Computing](https://github.com/ReshaRamzy/DigiTani/tree/61a85afbb34c14ff550018d02ca82ed0e589d37e/Mobile-Development)
 
