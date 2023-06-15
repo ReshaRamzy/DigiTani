@@ -1,0 +1,10 @@
+runtime: nodejs16 # or another supported version
+
+instance_class: B1
+
+env_variables:
+  BUCKET_NAME: "digitani"
+
+basic_scaling:
+  max_instances: 5
+  idle_timeout: 5m
