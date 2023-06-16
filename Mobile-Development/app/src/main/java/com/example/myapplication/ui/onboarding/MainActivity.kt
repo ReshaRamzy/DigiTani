@@ -23,9 +23,8 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         supportActionBar?.hide()
 
-        if (hasShownOnboarding()){
+        if (!hasShownOnboarding()){
             startActivity(Intent(this, MainActivity::class.java))
-            markOnboardingShown()
         }else{
             startActivity(Intent(this@MainActivity, MainScreenActivity::class.java))
             finish()
@@ -43,6 +42,7 @@ class MainActivity : AppCompatActivity() {
                 if (currentItem < (onBoardingViewPager.adapter?.itemCount?.minus(1) ?: 0)) {
                     onBoardingViewPager.setCurrentItem(currentItem + 1, true)
                 }else{
+                    markOnboardingShown()
                     startActivity(Intent(this@MainActivity, MainScreenActivity::class.java))
                     finish()
                 }
@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             tvSkipButton.setOnClickListener{
+                markOnboardingShown()
                 val intent = Intent(this@MainActivity, MainScreenActivity::class.java)
                 startActivity(intent)
                 finish()
