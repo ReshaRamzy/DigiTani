@@ -23,14 +23,13 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         supportActionBar?.hide()
 
-        if (!hasShownOnboarding()){
+        if (hasShownOnboarding()){
             startActivity(Intent(this, MainActivity::class.java))
             markOnboardingShown()
         }else{
             startActivity(Intent(this@MainActivity, MainScreenActivity::class.java))
             finish()
         }
-
 
         val numberOfScreens = resources.getStringArray(R.array.on_boarding_titles).size
         val adapterOnboard = OnBoardingAdapter(this , numberOfScreens)

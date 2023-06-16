@@ -7,24 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/textHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="353dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="0dp"
         android:layout_height="166dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
         android:minWidth="320dp"
         android:minHeight="151dp"
         app:cardBackgroundColor="@color/green_variant_1"
@@ -34,37 +23,77 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-        <TextView
-            android:id="@+id/tvCardActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/work_sans_semibold"
-            android:text="Activity Kosong"
-            android:textColor="@color/bg_main"
-            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tvCardactivityDesc"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/work_sans_medium"
-            android:minWidth="274dp"
-            android:text="Aktivitas Tanamanmu masih Kosong , Mulai tambah Tanamanmu!! 🌱  "
-            android:textColor="@color/bg_main"
-            android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvCardActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/work_sans_semibold"
+                android:text="Activity Kosong"
+                android:textColor="@color/bg_main"
+                android:textSize="20sp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/work_sans_bold"
-            android:letterSpacing="0"
-            android:minWidth="276dp"
-            android:text="Tambah Tanaman"
-            android:textAllCaps="false"
-            android:textSize="14sp"
-            app:cornerRadius="20dp" />
+            <TextView
+                android:id="@+id/tvCardactivityDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/work_sans_medium"
+                android:minWidth="274dp"
+                android:text="Aktivitas Tanamanmu masih Kosong , Mulai tambah Tanamanmu!! 🌱  "
+                android:textColor="@color/bg_main"
+                android:textSize="12sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/work_sans_bold"
+                android:letterSpacing="0"
+                android:minWidth="276dp"
+                android:text="Tambah Tanaman"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
 
 
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="166dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:minWidth="320dp"
+        android:minHeight="151dp"
+        app:cardBackgroundColor="#E6F4EA"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.01999998">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 
